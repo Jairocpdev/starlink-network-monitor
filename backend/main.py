@@ -1,5 +1,6 @@
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 import asyncio
 import json
 import random
