@@ -7,6 +7,22 @@ from datetime import datetime
 
 app = FastAPI(title="Starlink Network Monitor", version="1.0.0")
 
+@app.get("/")
+def root():
+    return {
+        "project": "Starlink Network Monitor",
+        "status": "online",
+        "docs": "/docs",
+        "health": "/health",
+        "antennas": "/antennas",
+        "ws": "/ws/telemetry",
+        "fleet": 50
+    }
+
+@app.get("/health")
+def health():
+    return {"status": "ok", "fleet": 50}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -21,7 +37,6 @@ def generate_antenna(id_num):
     region = random.choice(REGIONS)
     base_latency = random.uniform(15, 60)
     
-    # 20% chance de estar degradado/offline
     r = random.random()
     if r < 0.12:
         latency = random.uniform(100, 150)
@@ -39,10 +54,6 @@ def generate_antenna(id_num):
         "uptime": 99.9,
         "timestamp": datetime.utcnow().isoformat()
     }
-
-@app.get("/health")
-def health():
-    return {"status": "ok", "fleet": 50}
 
 @app.get("/antennas")
 def get_all():
