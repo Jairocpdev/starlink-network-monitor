@@ -1,5 +1,7 @@
 # 🛰️ Starlink Network Monitor
 
+![Demo](demo.gif)
+
 Real-time monitor for 50 LEO terminals — Angular 19 + FastAPI + WebSocket @ 900ms.
 
 ## 🚀 Live Production
@@ -21,11 +23,9 @@ Angular 19 | FastAPI | WebSocket | TypeScript | Python | Leaflet
 
 ## 🧑‍💻 Author
 
-**Jairo Andrade** —
+**Jairo Andrade** 
 
- [LinkedIn](https://www.linkedin.com/in/jairo-andrade-642724269/)
- 
+[LinkedIn](https://www.linkedin.com/in/jairo-andrade-642724269/)
+
 ## ⚠️ Disclaimer
-This is an independent educational project inspired by Starlink technology. 
-Not affiliated with, endorsed by, or connected to SpaceX or Starlink. 
-Starlink® and SpaceX® are registered trademarks of Space Exploration Technologies Corp.
+This is an independent educational project inspired by Starlink technology. Not affiliated with, endorsed by, or connected to SpaceX or Starlink. Starlink® and SpaceX® are registered trademarks of Space Exploration Technologies Corp.
