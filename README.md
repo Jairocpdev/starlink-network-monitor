@@ -24,3 +24,8 @@ Angular 19 | FastAPI | WebSocket | TypeScript | Python | Leaflet
 **Jairo Andrade** —
 
  [LinkedIn](https://www.linkedin.com/in/jairo-andrade-642724269/)
+ 
+## ⚠️ Disclaimer
+This is an independent educational project inspired by Starlink technology. 
+Not affiliated with, endorsed by, or connected to SpaceX or Starlink. 
+Starlink® and SpaceX® are registered trademarks of Space Exploration Technologies Corp.
