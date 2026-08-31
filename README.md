@@ -21,6 +21,6 @@ Angular 19 | FastAPI | WebSocket | TypeScript | Python | Leaflet
 
 ## 🧑‍💻 Author
 
-**Jairo Andrade** —
+**Jairo Andrade**
 
  [LinkedIn](https://www.linkedin.com/in/jairo-andrade-642724269/)
