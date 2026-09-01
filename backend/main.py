@@ -1,3 +1,5 @@
+import time
+
 from fastapi.middleware.cors import CORSMiddleware
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
@@ -56,9 +58,16 @@ def generate_antenna(id_num):
         "timestamp": datetime.utcnow().isoformat()
     }
 
+cached_data = None
+last_update = 0
+
 @app.get("/antennas")
 def get_all():
-    return [generate_antenna(i) for i in range(1, 51)]
+    global cached_data, last_update
+    if time.time() - last_update > 0.9:
+        cached_data = [generate_antenna(i) for i in range(1, 51)]
+        last_update = time.time()
+    return cached_data
 
 @app.websocket("/ws/telemetry")
 async def telemetry(ws: WebSocket):
