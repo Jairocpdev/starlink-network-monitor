@@ -1,6 +1,6 @@
 # 🛰️ Starlink Network Monitor
 
-![Demo](demo.gif)
+![Dashboard Live](docs/dashboard-live.png)
 
 Real-time monitor for 50 LEO terminals — Angular 19 + FastAPI + WebSocket @ 900ms.
 
